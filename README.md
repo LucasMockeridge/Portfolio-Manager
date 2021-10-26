@@ -1,6 +1,6 @@
 # Porfolio Manager
 
-A MERN application that allows users to track the performance of their portfolio in real time whilst encouraging long-term investing.
+A MERN application that provides users with a complete suite of tools to manage their portfolios whilst encouraging thoughtful long-term investing.
 
 # Features
 
