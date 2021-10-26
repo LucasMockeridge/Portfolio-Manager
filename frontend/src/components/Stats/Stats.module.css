@@ -1,0 +1,40 @@
+.statsWrapper{
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+}
+
+.statsWrapper h1{
+    margin: 0 2% 0 0;
+}
+
+.totalChange{
+    font-size: 14px;
+}
+
+.statsWrapper div{
+    padding: 0 23px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bgGreen{
+    background-color: #16c784;
+}
+
+.bgRed{
+    background-color: #ea3943;
+}
+
+@media only screen and (max-width: 500px){
+    .statsWrapper{
+        margin: 5% 0;
+        justify-content: space-between;
+    }
+}

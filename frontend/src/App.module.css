@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:global(.green) {
+    color: #16c784;
+}
+
+:global(.red){
+    color: #ea3943;
+}

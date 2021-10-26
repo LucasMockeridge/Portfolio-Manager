@@ -1,0 +1,27 @@
+.signInButton p{
+    color: #fff;
+    position: absolute;
+    margin: 0 auto 0;
+    left: 0;
+    right: 0;
+}
+
+.signInButton{
+    height: 40px;
+    padding: 0 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 160px;
+    background-color: #3861fb;
+    border: none;
+}
+
+.signInButton div{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    padding: 0px 10px;
+}

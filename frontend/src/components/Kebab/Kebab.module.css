@@ -1,0 +1,60 @@
+.kebabWrapper{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.kebabWrapper:hover{
+    border-color: #e7e7e7;
+}
+
+
+.kebab{
+    fill: #a8a8a8;
+    width: 15px;
+    height: 15px;
+}
+
+.kebabMenu{
+  width: 150px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow:0px 1px 2px #e7e7e7, 0px 8px 32px #e7e7e7;
+  border-radius: 10px;
+  position: absolute;
+  padding: 5px 10px;
+  top: 150%;
+  z-index: 1;
+  left: 50%;
+  margin-left: -75px;
+}
+
+.kebabMenu div{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.kebabMenu div:hover{
+    background-color: #f8f8f8;
+}
+
+.kebabMenu::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.kebabMenu a{
+    font-size: 16px;
+}

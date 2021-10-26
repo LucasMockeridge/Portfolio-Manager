@@ -1,0 +1,13 @@
+.tablebar{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+@media only screen and (max-width: 500px){
+    .tablebar{
+        margin: 5% 0;
+    }
+
+}

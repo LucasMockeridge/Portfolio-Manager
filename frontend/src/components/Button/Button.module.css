@@ -1,0 +1,17 @@
+.button{
+    color: #fff;
+    background-color: #3861fb;
+    padding: 0 43px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .button{
+        padding: 0 23px;
+    }
+}

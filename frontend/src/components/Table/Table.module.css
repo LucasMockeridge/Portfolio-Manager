@@ -1,0 +1,61 @@
+.tableWrapper{
+    width: 100%;
+}
+
+.stockTable{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.stockTable th{
+    font-size: 14px;
+    text-align: left;
+    padding: 0 30px 30px 0;
+    white-space: nowrap;
+}
+
+.stockTable tbody tr{
+    height: 8vh;
+    font-weight: 500;
+}
+
+.stockTable tbody tr td{
+    padding: 0 30px 30px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 1000px){
+    .portfolioTable th:nth-of-type(5), .portfolioTable tbody tr td:nth-of-type(5){
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 850px){
+    .portfolioTable th:nth-of-type(7), .portfolioTable tbody tr td:nth-of-type(7){
+        display: none;
+    }
+
+    .watchlistTable th:nth-of-type(4), .watchlistTable tbody tr td:nth-of-type(4){
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .portfolioTable tbody tr td:nth-of-type(8), .watchlistTable tbody tr td:nth-of-type(5), .holdingTable tbody tr td:nth-of-type(4){
+        display: none;
+    }
+
+    .stockTable tbody tr td, .stockTable th{
+        padding: 0 20px 20px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .portfolioTable tbody tr td:nth-of-type(4), .portfolioTable th:nth-of-type(4){
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,94 @@
+nav {
+    height: 10vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+}
+.signOutList{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    transform: color 0.5s;
+}
+
+.active{
+    color: #3861fb;
+}
+
+li a:hover{
+    color: #3861fb;
+}
+
+.active{
+    display: flex;
+}
+
+.border{
+    border-bottom: 2px solid #fff;
+}
+
+.profilePicture{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  ul{
+    width: 60%; 
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  ul{
+    width: 65%; 
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  ul{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    height: 40vh;
+    right: 0;
+    display: none;
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 2px solid #e7e7e7;
+    top: 10vh;
+  }
+
+  nav{
+      border-bottom: 2px solid #e7e7e7;
+  }
+
+  .profileList{
+      display: none;
+  }
+
+  .signOutList{
+      display: flex;
+  }
+
+}

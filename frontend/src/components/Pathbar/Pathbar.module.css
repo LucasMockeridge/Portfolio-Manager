@@ -1,0 +1,15 @@
+.pathbar{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.pathbar .path span{
+    color: #a8a8a8;
+}
+
+@media only screen and (max-width: 500px){
+    .pathbar{
+        font-size: 11px;
+    }
+}
