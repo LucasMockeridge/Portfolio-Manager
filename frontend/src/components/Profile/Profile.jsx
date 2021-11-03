@@ -12,14 +12,12 @@ const Profile = ({img, signOut}) => {
         const body = {_id: user.id}
 		await signOut()
         await deleteUser(body)
-		window.location.href = "https://thethesis.netlify.app"
-		window.location.reload(true)
+		window.location.href = "/"
     }
 
 	const signOutHandler = async () => {
 		await signOut()
-		window.location.href = "https://thethesis.netlify.app"
-		window.location.reload(true)
+		window.location.href = "/"
 	}
 
     return (

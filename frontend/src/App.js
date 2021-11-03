@@ -2,8 +2,9 @@ import React from 'react';
 import './App.module.css';
 import { Navbar, Home, Portfolio, Watchlist, Holding, Results, Quote } from './components'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
+import { useGlobalContext } from './context'
 const App = () => {
+	const { user } = useGlobalContext();
     return (
         <Router>
             <Navbar />
@@ -12,19 +13,19 @@ const App = () => {
                     <Home />
                 </Route>
                 <Route exact path="/portfolio">
-                    <Portfolio />
+                    {user && <Portfolio />}
                 </Route>
                 <Route exact path="/watchlist">
-                    <Watchlist />
+                    {user && <Watchlist />}
                 </Route>
                 <Route path = '/holding/:name'>
-                    <Holding />
+                    {user && <Holding />}
                 </Route>
                 <Route path = '/quote/:name'>
-                    <Quote />
+                    {user && <Quote />}
                 </Route>
                 <Route path = '/search'>
-                    <Results />
+                    {user && <Results />}
                 </Route>
                 <Route path="*">
                     <h1>404</h1>
